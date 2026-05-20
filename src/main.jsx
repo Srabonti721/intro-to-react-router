@@ -57,6 +57,10 @@ const postPromise = fetch('https://jsonplaceholder.typicode.com/posts').then(res
     {
     path:"/app",
     Component:App
+    },
+    {
+      path:'*',
+      element:<div> <h1>not found : 404 </h1></div>
     }
 
   ])
